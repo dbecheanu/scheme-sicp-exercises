@@ -5,9 +5,11 @@
 
 (define (max-square a b c)
   (cond 
-    ((and (< a b) (< a c)) (+ (square c b)))
-    ((and (< b a) (< b c)) (+ (square a c)))
-    (else (+ (square b c)))
+    ((and (< a b) (< a c)) (square c b))
+    ((< b c)  (square a c))
+    (else  (square a b))
     )
   )
 (max-square 1 2 3)
+(max-square 2 1 3)
+(max-square 3 2 1)
