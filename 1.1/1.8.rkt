@@ -25,5 +25,5 @@
   (define (square x )(* x x))
   (sqrt-iter 1.0 x 0)
   )
-(cubeR 8)
+(cubeR 27)
 
