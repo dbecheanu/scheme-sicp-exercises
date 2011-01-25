@@ -37,7 +37,7 @@
   (sqrt-iter 1.0 x))
 
 (define (square x )(* x x))
-
+;infinite loop
 (sqrt 111111111111111)
 
-; In this case the else case is always evaluated since is parameter to a function hence the sqrt function never returns.
+
